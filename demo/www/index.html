@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="ionic">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script -->
+    <script src="lib/cordova/cordova.android.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+    <ion-pane>
+        <!-- 侧边栏 -->
+        <ion-side-menus>
+          <!-- 中间部分 -->
+          <ion-side-menu-content class="calm-bg">
+            <ion-header-bar class="bar-dark">
+              <a menu-toggle="left" class="button icon icon-navicon"></a>
+              <h1 class="title">CIS 商店</h1>
+            </ion-header-bar>
+            <!-- 底部选项卡 -->
+            <div class="tabs tabs-icon-top tab" ng-click="tabChange()">
+              <a class="tab-item active">
+                <i class="icon ion-ios-home-outline"></i>首页
+              </a>
+              <a class="tab-item">
+                <i class="icon ion-ios-cart-outline"></i>购物车
+              </a>
+              <a class="tab-item">
+                <i class="icon ion-ios-person-outline"></i>我的
+              </a>
+              <a class="tab-item">
+                <i class="icon ion-ios-settings"></i>关于
+              </a>
+            </div>
+          </ion-side-menu-content>
+          <!-- 左边侧边栏部分 -->
+          <ion-side-menu title="左边" side="left" width="150">
+            <ion-content  class="balanced-bg">
+              <ion-list class="badge-calm">
+                <ion-item class="bar-dark">15011899564</ion-item>
+                <ion-item class="text-center">用户</ion-item>
+                <ion-item class="text-center">退出</ion-item>
+              </ion-list>
+            </ion-content>
+          </ion-side-menu>
+        </ion-side-menus>
+    </ion-pane>
+  </body>
+</html>
