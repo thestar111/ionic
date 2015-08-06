@@ -10,4 +10,5 @@ angular.module('starter', ['ionic'])
       StatusBar.styleDefault();
     }
   });
-})
+});
+angular.module('tabs',['ionic']);
